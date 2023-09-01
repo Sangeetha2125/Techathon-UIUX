@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultural Fest</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Recharge - Cultural Fest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 </head>
@@ -18,14 +21,114 @@
         </div>     
         <i id="menu-btn" class="fa-solid fa-bars"></i>
         <nav class="navbar-container">
-            <p><a href="">Home</a></p>
-            <p><a href="">Events</a></p>
-            <p><a href="">About</a></p>
-            <p><a href="">Contact Us</a></p>
+            <p><a href="/">Home</a></p>
+            <p><a href="#events">Events</a></p>
+            <p><a href="#gallery">Gallery</a></p>
+            <p><a href="#organizers">Organizers</a></p>
+            <p id="contact-link"><a>Contact Us</a></p>
         </nav>     
     </div>
 
     <!-- Welcome Section -->
     <div class="banner"></div>
+    <div class="welcome-content">
+        <h1>Charge Up Folks</h1>
+        <p>Get Ready to Thrive! Join us for an electrifying experience at <span>RECHARGE</span>. Dance to the rhythm of diverse cultures, savor global flavors, and create unforgettable memories. Let your spirit soar as we embark on this incredible journey together. Welcome to the cultural extravaganza!</p>
+        <div class="timer-container">
+            <div class="days">
+                <p class="timer-main">75</p>
+                <p>DAYS</p>
+            </div>
+            <div class="hours">
+                <p class="timer-main">18</p>
+                <p>HOURS</p>
+            </div>
+            <div class="mins">
+                <p class="timer-main">75</p>
+                <p>MINS</p>
+            </div>
+            <div class="secs">
+                <p class="timer-main">25</p>
+                <p>SECS</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events Section -->
+    <div class="events-container" id="events">
+
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container" id="gallery">
+        <h1>GALLERY</h1>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides gallery">
+                <li class="glide__slide" style="background-image: url(images/gallery/gallery-1.jpg);">
+                    <div class="gallery-content">
+                        <h3>IGBC PRE-CERTIFIED GREEN BUILDING</h3>
+                        <p>We understand the impact of carbon footprint on our environment which is why our building stock uses eco-friendly construction material to improve energy and water efficiency to create a healthier and sustainable environment.</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/gallery/gallery-2.png);">
+                    <div class="gallery-content">
+                        <h3>SKY DECK</h3>
+                        <p>At Grandthum, the essence of design is fluidity, that is allowing movement that breaks barriers and helps create interaction and a sense of community</p>
+                    </div>
+                </li>
+                <li class="glide__slide" style="background-image: url(images/gallery/gallery-3.jpg);">
+                    <div class="gallery-content">
+                        <h3>5 SCREEN MULTIPLEX</h3>
+                        <p>We can't talk about an entertainment destination without talking about movies. The multiplex at Grandthum ensures that viewers get their finest movie experience here.</p>
+                    </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form Popup Section -->
+    <div class="form-popup" id="form-popup">
+        <div class="form-content animate">
+            <img src="images/bg.jpg" alt="">
+            <div class="form-heading">
+                <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
+                <h1>RECHARGE</h1>
+                <p>Get Festive Now !</p>
+                <form id="formid1">
+                    <input type="text" name="name1" id="name1" placeholder="Enter Your Name" spellcheck="false" autocomplete="off" required>
+                    <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" autocomplete="off" spellcheck="false" required>
+                    <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" autocomplete="off" spellcheck="false" required>
+                    <input type="text" name="comment1" id="comment1" placeholder="Enter Your Message" autocomplete="off" spellcheck="false" required>
+                    <button type="submit" id="submitbtn1">Send Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Organizers Section -->
+    <div class="organizers-container" id="organizers">
+        <h1>Organizers</h1>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>
+            @2023 REC All Rights Reserved
+        </p>
+    </div>
 </body>
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="./js/glider.js"></script>
+<script>
+    const config ={
+        type:'carousel',
+        perView:1,
+        autoplay:3000,
+    }  
+    new Glide('.glide',config).mount()
+</script>
 </html>
