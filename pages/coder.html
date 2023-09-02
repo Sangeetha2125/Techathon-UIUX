@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge - Cultural Fest</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/glide.core.min.css">
+    <link rel="stylesheet" href="../css/glide.theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="header ind-nav">
+        <div class="logo-title">
+            <a href="../index.html"><h1>RECHARGE</h1></a>
+        </div>     
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
+        <nav class="navbar-container">
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../index.html#events">Events</a></p>
+            <p><a href="../index.html#gallery">Gallery</a></p>
+            <p><a href="../index.html#organizers">Organizers</a></p>
+            <p id="contact-link"><a>Contact Us</a></p>
+        </nav>     
+    </div>
+
+    <div class="individual-event">
+        <img src="../images/events/programmer.jpg" alt="" srcset="">
+        <div class="ind-event-info">
+            <h1>#No.1 Coder</h1>
+            <p>The Coding Competition is an exhilarating challenge that beckons tech enthusiasts, problem solvers, and coding wizards to showcase their programming prowess. This thrilling event transcends boundaries, bringing together participants from diverse backgrounds, all driven by their passion for coding and innovation.</p>
+            <p>In this highly competitive arena, participants are tasked with solving a series of complex problems, pushing their coding skills to the limit. From algorithmic challenges to real-world application development, the competition covers a spectrum of coding disciplines.</p>
+            <p>The judging panel consists of seasoned programmers, software engineers, and tech leaders, evaluating submissions based on efficiency, creativity, and adherence to best coding practices. Prizes, recognition, and the opportunity to network with industry professionals await those who rise to the occasion.</p>
+            <button>Register Now<i class="fa-solid fa-up-right-from-square"></i></button>
+        </div>
+    </div>
+
+    <!-- Contact Form Popup Section -->
+    <div class="form-popup" id="form-popup">
+        <div class="form-content animate">
+            <img src="../images/bg.jpg" alt="">
+            <div class="form-heading">
+                <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
+                <h1>RECHARGE</h1>
+                <p>Get Festive Now !</p>
+                <form id="formid1">
+                    <input type="text" name="name1" id="name1" placeholder="Enter Your Name" spellcheck="false" autocomplete="off" required>
+                    <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" autocomplete="off" spellcheck="false" required>
+                    <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" autocomplete="off" spellcheck="false" required>
+                    <input type="text" name="comment1" id="comment1" placeholder="Enter Your Message" autocomplete="off" spellcheck="false" required>
+                    <button class="contact-btn" type="submit" id="submitbtn1">Send Now<i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>
+            @2023 REC All Rights Reserved
+        </p>
+    </div>
+</body>
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="../js/glider.js"></script>
+<script>
+    const config ={
+        type:'carousel',
+        perView:1,
+        autoplay:2500,
+    }  
+    new Glide('.glide',config).mount()
+</script>
+</html>

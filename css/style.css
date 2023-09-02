@@ -416,6 +416,62 @@ body{
     font-size: 1.15em;
 }
 
+/* Individual Event Section */
+.ind-nav{
+    position:static;
+}
+.individual-event{
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.individual-event img{
+    width: 32%;
+    height: 82vh;
+    border-radius: 20px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.ind-event-info{
+    display: flex;
+    flex-direction: column;
+}
+.ind-event-info h1{
+    font-family: 'Audiowide',cursive;
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    padding: 0.5em 0;
+    color: rgb(224, 224, 18);
+}
+.ind-event-info p{
+    line-height: 2;
+    font-size: 1.1em;
+    padding: 0.35em 0;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.ind-event-info button{
+    width: 100%;
+    padding: 11px;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 6px;
+    font-size: 1.22em;
+    color: white;
+    background-color: rgb(2, 2, 67);
+    margin-top: auto;
+}
+.ind-event-info button i{
+    margin-left: 0.75em;
+}
+.ind-event-info button:hover{
+    cursor: pointer;
+    transform: translateY(4px);
+    background-color:  rgba(2, 2, 67,0.75);
+}
+
 /* Media Queries */
 
 /* Navbar Section */
@@ -564,5 +620,19 @@ body{
     }
     .form-content{
         grid-template-columns: 1fr;
+    }
+}
+
+/* Individual Events Section */
+@media screen and (max-width:1200px) {
+    .individual-event{
+        flex-wrap: wrap;
+    }
+    .individual-event img{
+        width: 100%;
+        height: 50vh;
+    }
+    .ind-event-info button{
+        margin-top: 1em;
     }
 }
