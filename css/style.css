@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: black;
+    background-color: rgb(25,25,25);
 }
 
 /* Navbar Section */
@@ -133,10 +133,10 @@ body{
     margin-bottom: 2.5em;
     filter: grayscale(0.25);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: 0.2s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .gallery .glide__slide:hover{
-    filter: grayscale(0.75);
+    transform: scale(1.025);
 }
 .gallery-content h3{
     position: absolute;
@@ -178,8 +178,8 @@ body{
     margin: 8em auto;
     padding: 0.5em;
     border-radius: 12px;
-    border: 2px double rgba(255, 255, 255, 0.5);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(255,255,255, 0.2) 0px 8px 24px;
 }
 .form-content{
     display: grid;
@@ -261,15 +261,86 @@ body{
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
+.contact-btn i{
+    margin-left: 0.75em;
+}
 .form-popup{
     display: none;
 }
 
+/* Events Section */
+.events-container{
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    text-align: center;
+}
+.events-container h1{
+    text-align: center;
+    margin: 1.25em auto;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    letter-spacing: 1.25px;
+}
+.event-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+    padding-top:0;
+    justify-content: center;
+}
+.event{
+    box-shadow: rgba(255,255,255, 0.2) 0px 8px 24px;
+    border-radius: 12px;
+    filter: grayscale(0.25);
+    width: 375px;
+    transition: 0.3s ease-in-out;
+}
+.event:hover{
+    transform: translateY(12px);
+}
+.event img{
+    width:375px;
+    height: 360px;
+    object-fit: cover;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    filter: grayscale(0.25);
+}
+.event-info{
+    padding:1em 0.5em;
+}
+.event-info h2{
+    letter-spacing: 1.5px;
+    margin-bottom: 0.75em;
+}
+.event-info button{
+    display: block;
+    width: 94%;
+    margin: auto;
+    background-color: #bd1d71;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1.25em;
+}
+.event-info button i{
+    margin-left: 0.75em;
+}
+.event-info button:hover{
+    cursor: pointer;
+    background-color: rgba(189, 29, 113,0.85);
+}
+
 /* Organizers Section */
 .organizers-container{
-    max-width: 1200px;
+    max-width: 1260px;
     margin: 0 auto;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     text-align: center;
 }
 .organizers-container h1{
@@ -278,6 +349,62 @@ body{
     letter-spacing: 1px;
     font-size: 2.5em;
     letter-spacing: 1.25px;
+}
+.organizers-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+    padding-top:0;
+    justify-content: center;
+}
+.organizer{
+    background-color: rgba(255,255,255,0.25);
+    background-image: linear-gradient(to right bottom, #08aab9, #009dd8, #597bd3, #9c4ca5, #b20059);
+    box-shadow: rgba(255,255,255, 0.2) 0px 8px 24px;
+    border-radius: 12px;
+    filter: grayscale(0.35);
+    width: 375px;
+}
+.organizer img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 0.8em;
+    object-fit: cover;
+}
+.organizer-info{
+    background-color: rgb(25,25,25);
+}
+.organizer-info h2{
+    padding-top: 1em;
+    margin: 0;
+}
+.position{
+    padding:1em;
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.contact-icons-container{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+    justify-content: center;
+    padding-bottom: 1.5em;
+}
+.icon{
+    width: 50px;
+    text-align: center;
+    transition: 0.25s ease-in-out;
+}
+.icon i{
+    font-size: 2em;
+}
+.icon:hover{
+    cursor: pointer;
+    transform: translateY(6px);
 }
 
 /* Footer Section */
@@ -342,6 +469,11 @@ body{
         line-height: 1.8;
     }
 }
+@media screen and (max-width:800px) {
+    .timer-container{
+        width: 100%;
+    }
+}
 @media screen and (max-width:500px) {
     .welcome-content{
         flex-direction: column;
@@ -353,9 +485,6 @@ body{
     }
     .welcome-content p{
         font-size: 1.3em;
-    }
-    .timer-container{
-        width: 100%;
     }
 }
 
@@ -374,7 +503,7 @@ body{
         font-size: 95%;
     }
     .gallery-content p{
-        font-size: 1.05em;
+        font-size: 1em;
     }
 }
 
