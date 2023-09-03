@@ -543,6 +543,20 @@ body{
         font-size: 1.3em;
     }
 }
+@media screen and (max-width:360px) {
+    .welcome-content{
+        margin-top: 2.5em;
+    }
+    .logo-title h1{
+        font-size: 1.6em;
+    }
+    .timer-container div{
+        padding: 0.5em;
+    }
+    .timer-container .timer-main{
+        font-size: 1.35em;
+    }
+}
 
 /* Gallery Section */
 @media screen and (max-width:1200px) {
@@ -560,6 +574,14 @@ body{
     }
     .gallery-content p{
         font-size: 1em;
+    }
+}
+@media screen and (max-width:500px) {
+    .gallery-content p{
+        display: none;
+    }
+    .gallery .glide__slide{
+        min-height: 60vh;
     }
 }
 
@@ -627,6 +649,19 @@ body{
     }
     .form-heading form button{
         padding: 0.4em;
+    }
+}
+
+/* Events Section */
+@media screen and (max-width:400px) {
+    .event-wrap{
+        padding: 1em;
+    }
+    .event{
+        width: 100%;
+    }
+    .event img{
+        width: 100%;
     }
 }
 
