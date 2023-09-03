@@ -545,7 +545,7 @@ body{
 }
 @media screen and (max-width:360px) {
     .welcome-content{
-        margin-top: 2.5em;
+        margin-top: 10vh;
     }
     .logo-title h1{
         font-size: 1.6em;
@@ -676,5 +676,12 @@ body{
     }
     .ind-event-info button{
         margin-top: 1em;
+    }
+}
+
+/* Footer Section */
+@media screen and (max-width:400px) {
+    .footer p{
+        padding: 1.5em 4px;
     }
 }
