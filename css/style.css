@@ -22,7 +22,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(0,0,0,0.75);
+    background-color: black;
     z-index: 1000;
 }
 .header nav{
@@ -55,7 +55,7 @@ body{
 
 /* Welcome Section */
 .banner{
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),url('../images/culturals-bg.jpg') no-repeat;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)),url('../images/culturals-bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -593,7 +593,7 @@ body{
 }
 @media screen and (max-width:800px) {
     .form-popup .form-content{
-        width:95%;
+        width:96%;
         position: relative;
     }
     .form-content img{
@@ -606,7 +606,7 @@ body{
         margin-top: 2.5em;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:580px) {
     .form-heading form input,.form-heading form button{
         font-size: 3.5vw;
         width: 100%;
@@ -617,9 +617,16 @@ body{
     .form-popup .form-content{
         padding: 1em;
         margin: 4em auto;
+        width: 92%;
     }
     .form-content{
         grid-template-columns: 1fr;
+    }
+    .form-heading form input{
+        padding: 0.5em;
+    }
+    .form-heading form button{
+        padding: 0.4em;
     }
 }
 
